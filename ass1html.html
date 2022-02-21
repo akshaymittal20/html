@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms API</title>
+    <script>
+        function inputHandler(source, target){
+            document.getElementById(target).value = source.value;
+        }
+    </script>
+</head>
+<body>
+    <table border="1" cellpadding="5">
+        <thead>
+            <tr>
+                <th>Input Type</th>
+                <th>As Rendered By Browser</th>
+                <th>Value Entered</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Text</td>
+                <td> <input type="text" onchange="inputHandler(this,'txt')" /> </td>
+                <td> <output id="txt"></td>
+            </tr>
+            <tr>
+                <td>Search</td>
+                <td> <input type="search" onchange="inputHandler(this,'search')"/> </td>
+                <td> <output id="search"> </td>
+            </tr>
+            <tr>
+                <td>Color</td>
+                <td> <input type="color" onchange="inputHandler(this,'color')"/> </td>
+                <td> <output id="color"> </td>
+            </tr>
+            <tr>
+                <td>Range</td>
+                <td> <input type="range" onchange="inputHandler(this,'Range')"/> </td>
+                <td> <output id="Range"> </td>
+            </tr>
+            <tr>
+                <td>Time</td>
+                <td> <input type="time"onchange="inputHandler(this,'time')"/> </td>
+                <td> <output id="time"> </td>
+            </tr>
+            <tr>
+                <td>Date</td>
+                <td> <input type="date" onchange="inputHandler(this,'date')"/> </td>
+                <td> <output id="date"> </td>
+            </tr>
+            <tr>
+                <td>Date Time Local</td>
+                <td> <input type="datetime-local" onchange="inputHandler(this,'datetime-local')"/> </td>
+                <td><output id="datetime-local"></output></td>
+            </tr>
+            <tr>
+                <td>Week</td>
+                <td> <input type="week" onchange="inputHandler(this,'week')"/> </td>
+                <td><output id='week'></output></td>
+            </tr>
+            <tr>
+                <td>Month</td >
+                <td> <input type="month" onchange="inputHandler(this,'month')"/> </td>
+                <td><output id='month'></output></td>
+            </tr>
+            <tr>
+                <td>eMail</td>
+                <td> <input type="email"  onchange="inputHandler(this,'eMail')"/> </td>
+                <td><output id='eMail'></output></td>
+            </tr>
+            <tr>
+                <td>Telephone</td>
+                <td> <input type="tel"onchange="inputHandler(this,'tel')"/> </td>
+                <td><output id='tel'></output></td>
+            </tr>
+            <tr>
+                <td>URL</td>
+                <td> <input type="url"onchange="inputHandler(this,'url')"/> </td>
+                <td><output id='url'></output></td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <table>
+        <thead>
+            <tr>
+                <th>Input Type</th>
+                <th>Input for Output</th>
+                <th>As Displayed on Browser</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th> Progress  </th>
+                <th> <input type="range" onchange="inputHandler(this,'progress')"/> </th>
+                <th><output id='progress'/></output></th>
+                <th> <progress value="0.5" ></progress> </th>
+
+            </tr>
+</body>
+</html> 
